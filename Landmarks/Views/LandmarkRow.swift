@@ -7,8 +7,9 @@
 
 import SwiftUI
 
+// Draw one row from the list.
 struct LandmarkRow: View {
-//    Properties need to be initialized for the preview to work
+//    Properties need to be initialized for the preview to work.
     var landmark: Landmark
     
     var body: some View {
@@ -22,7 +23,9 @@ struct LandmarkRow: View {
     }
 }
 
-//The code you write in a preview provider only changes what Xcode displays in the canvas
+// Xcode’s canvas automatically recognizes and displays any type in the current editor that conforms to the PreviewProvider protocol. A preview provider returns one or more views, with options to configure the size and device.
+// You can customize the returned content from a preview provider to render exactly the previews that are most helpful to you.
+//The code you write in a preview provider only changes what Xcode displays in the canvas.
 struct LandmarkRow_Previews: PreviewProvider {
     static var previews: some View {
         Group{

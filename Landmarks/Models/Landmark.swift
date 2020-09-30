@@ -2,6 +2,7 @@ import SwiftUI
 import CoreLocation
 
 // Declares a Landmark structure that stores all of the landmark information the app needs to display, and imports an array of landmark data from landmarkData.json.
+// Identifiable protocol: iterate through data
 struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
